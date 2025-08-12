@@ -1,0 +1,53 @@
+body {
+    font-family: Tahoma;
+    margin: 0;
+    line-height: 1.8;
+}
+
+header,
+footer {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+nav a {
+    margin: 0 10px;
+    font-weight: bold;
+    color: black;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+section {
+    flex: 3;
+    padding: 15px;
+    border: 1px solid;
+    margin-right: 10px;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid;
+}
+
+aside {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
