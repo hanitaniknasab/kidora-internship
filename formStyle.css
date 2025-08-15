@@ -1,0 +1,95 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  padding: 20px;
+}
+
+h1 {
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 60%;
+  padding: 6px;
+  margin-bottom: 12px;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2c5aa0;
+}
+
+input[type="color"] {
+  width: 100px;
+  height: 40px;
+}
+
+
+input[type="file"] {
+  padding: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+output {
+  display: inline-block;
+  min-width: 20px;
+  padding: 2px 8px;
+  background: #4a90e2;
+  color: white;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  width: auto;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: #2c5aa0;
+}
+
+input[type="reset"]:hover {
+  background: #5a6268;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 15px;
+}
+
+fieldset {
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+label {
+
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}

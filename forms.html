@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <title>فرم کامل کودکانه</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>فرم بازی کودکان</h1>
+        <form class="kids-form">
+
+            <div class="form-group">
+                <label for="name">نام و نام خانوادگی کامل</label>
+                <input type="text" id="name" placeholder="نام خودت">
+            </div>
+
+            <div class="form-group">
+                <label for="age">سن</label>
+                <input type="number" id="age" min="3" max="12">
+            </div>
+
+            <fieldset>
+                <legend>جنسیت</legend>
+                <div class="radio-group">
+                    <input type="radio" id="boy" name="gender" value="boy">
+                    <label for="boy">پسر</label>
+                    <input type="radio" id="girl" name="gender" value="girl">
+                    <label for="girl">دختر</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="pass">رمز مخفی</label>
+                <input type="password" id="pass" placeholder="••••••">
+            </div>
+
+            <div class="form-group">
+                <label for="color">رنگ مورد علاقه</label>
+                <input type="color" id="color" value="#ff0000">
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">تاریخ تولد</label>
+                <input type="date" id="birthday">
+            </div>
+
+            <div class="form-group">
+                <label for="alarm">ساعت خواب</label>
+                <input type="time" id="alarm">
+            </div>
+
+            <div class="form-group">
+                <label for="month">ماه و سال ورود</label>
+                <input type="month" id="month">
+            </div>
+
+            <div class="form-group">
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" placeholder="example@site.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">تلفن</label>
+                <input type="tel" id="phone" placeholder="09123456789">
+            </div>
+
+            <div class="form-group">
+                <label for="photo">عکس شما</label>
+                <input type="file" id="photo">
+            </div>
+
+            <div class="form-group">
+                <label for="happy">چقدر به موسیقی علاقه داری؟</label>
+                <input type="range" id="happy" min="1" max="10" value="5" oninput="happinessOutput.value = this.value">
+                <output id="happinessOutput" for="happy">5</output>
+            </div>
+
+            <div class="form-group">
+                <label for="fruit">میوه مورد علاقه</label>
+                <input list="fruits" id="fruit" placeholder="یک میوه انتخاب کن">
+                <datalist id="fruits">
+                    <option value="سیب">
+                    <option value="موز">
+                    <option value="پرتقال">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="toy">اسباب بازی</label>
+                <select id="toy">
+                    <optgroup label="ایرانی">
+                        <option>فرفره</option>
+                        <option>عروسک</option>
+                    </optgroup>
+                    <optgroup label="خارجی">
+                        <option>لگو</option>
+                        <option>باربی</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>چه کارهایی دوست داری؟</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="draw" name="hobby" value="draw">
+                    <label for="draw">نقاشی</label>
+                    <input type="checkbox" id="game" name="hobby" value="game">
+                    <label for="game">بازی</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="story">در مورد خودت</label>
+                <textarea id="story" rows="4" placeholder="یک داستان بنویس..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="kid-search">🔍 دنبال چه ماجرایی می‌گردی؟</label>
+                <div class="search-container">
+                    <input type="search" id="kid-search" placeholder="مثل: اژدها، شاهزاده، فضا...">
+                    <button type="submit" class="search-btn">پیدا کن!</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="meet-time">زمان قرار ملاقات با دوستان:</label>
+                <input type="datetime-local" id="meet-time">
+            </div>
+
+            <div class="form-group">
+                <label for="fun-button">دکمه جادویی بازی!</label>
+                <input type="button" id="fun-button" value="کلیک کن" onclick="alert('هورا! دکمه جادویی کار کرد 🎉')">
+            </div>
+
+            <div class="form-group">
+                <label for="website">ایمیل شما</label>
+                <input type="url" id="website" placeholder="https://example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="vacation">هفته بازی اخیر</label>
+                <input type="week" id="vacation">
+            </div>
+
+            <div class="form-group">
+                <label for="image-btn">ارسال تصویر شناسنامه</label>
+                <input type="image" id="image-btn" src="button-image.png" alt="ارسال">
+            </div>
+
+            <div class="button-group">
+                <button type="submit">ثبت</button>
+                <input type="submit" value="ارسال">
+                <input type="reset" value="پاک کردن">
+            </div>
+
+            <input type="hidden" name="secret" value="kids123">
+
+        </form>
+    </div>
+</body>
+
+</html>
